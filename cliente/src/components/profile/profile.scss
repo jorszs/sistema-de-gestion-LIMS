@@ -1,0 +1,30 @@
+@import "../../scss/index.scss";
+.edit-profile {
+  &__header {
+    justify-content: space-around;
+    // padding-left: 20px;
+    // padding-right: 20px;
+    align-items: center;
+    display: flex;
+    height: 100px;
+    background-color: $background-grey-light;
+  }
+
+  &__tabs {
+    height: calc(100vh - 280px);
+    overflow: auto;
+  }
+
+  .profile-element {
+    display: flex;
+    align-items: center;
+    .titulo {
+      margin-left: 20px;
+    }
+    &-avatar {
+      :hover {
+        cursor: hand;
+      }
+    }
+  }
+}

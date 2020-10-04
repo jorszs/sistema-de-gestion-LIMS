@@ -1,0 +1,76 @@
+@import "../../scss/index.scss";
+
+.menu-top {
+  display: flex;
+
+  button {
+    text-overflow: clip;
+    background-color: transparent;
+    color: $font-light;
+    border: 0;
+    &:hover {
+      color: $primary-color;
+    }
+    &:focus,
+    &:active {
+      color: $font-light;
+    }
+  }
+
+  &__left {
+    &-logo {
+      margin-left: 10px;
+
+      width: 145px;
+      height: 40px;
+      padding: 0 10px;
+    }
+  }
+
+  &__right {
+    position: absolute;
+    right: 0;
+
+    &-profile {
+      padding-left: 2px;
+      border-radius: 20px;
+      background-color: transparent;
+      width: 100px;
+      min-width: 40px;
+      min-height: 25px;
+      &:hover {
+        //color: $primary-color;
+        background: transparentize($background-light, $amount: 0.7);
+      }
+      &:focus,
+      &:active {
+        background: transparentize($color: #fbf7f7, $amount: 0.6);
+        color: transparentize($font-light, $amount: 0.3);
+      }
+      .avatar {
+        right: 10px;
+        height: 25px;
+        width: 25px;
+      }
+    }
+  }
+}
+
+.menu-top-right {
+  &__button {
+    margin: 5px;
+    border-radius: 20px;
+    height: 38px;
+    background-color: transparent;
+    border: 50px;
+    &:hover {
+      color: $primary-color;
+      background-color: transparentize($color: $primary-color, $amount: 0.8);
+    }
+    &:focus,
+    &:active {
+      color: $font-light;
+      background-color: transparentize($color: #000000, $amount: 0);
+    }
+  }
+}

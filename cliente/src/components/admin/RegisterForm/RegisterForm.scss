@@ -1,0 +1,51 @@
+@import "../../../scss/index.scss";
+
+.register-form {
+  text-align: left;
+  bottom: 30px;
+
+  .ant-form-item {
+    //el tercer hijo y el ultimo hijo van a tener un margin 0
+    &:nth-child(3),
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+
+  &__input {
+    .ant-input-prefix {
+      span {
+        font-size: 0em + 22px / $defaultFontSize;
+      }
+
+      input {
+        font-size: 0em + 20px / $defaultFontSize;
+        padding: 20px 20px 20px 40px !important;
+        &:focus {
+          border-color: $primary-color;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+
+  &__button {
+    align-items: center;
+    width: 100%;
+    height: 42px;
+    font-size: 0em + 22px / $defaultFontSize;
+    background-color: $primary-color;
+    color: $font-light;
+
+    &:hover {
+      background-color: $primary-color-hover;
+      color: $font-light;
+    }
+    &:focus,
+    &:active {
+      background-color: $primary-color;
+      color: $font-light;
+      border: 0;
+    }
+  }
+}

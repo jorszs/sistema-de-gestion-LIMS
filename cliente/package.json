@@ -1,0 +1,45 @@
+{
+  "name": "web-personal-client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "antd": "^4.6.4",
+    "devextreme": "20.1-stable",
+    "devextreme-react": "20.1-stable",
+    "jspdf": "^2.1.0",
+    "jspdf-autotable": "^3.5.9",
+    "jwt-decode": "^2.2.0",
+    "node-sass": "^4.14.1",
+    "pify": "^5.0.0",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-dropzone": "^11.0.1",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.0"
+  },
+  "scripts": {
+    "dev": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "devextreme-themebuilder": "20.1-stable"
+  }
+}

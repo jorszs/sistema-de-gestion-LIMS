@@ -1,0 +1,15 @@
+.home {
+  //background-image: url("../assets/img/png/background.jpg") !important;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  &-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    &-info {
+      color: linen;
+    }
+  }
+}

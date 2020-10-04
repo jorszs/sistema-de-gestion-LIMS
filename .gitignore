@@ -1,0 +1,9 @@
+yarn.lock
+package-lock.json
+
+mongo/
+build/
+
+node_modules/
+server/node_modules/
+cliente/node_modules/

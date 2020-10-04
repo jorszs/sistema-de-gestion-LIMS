@@ -1,0 +1,33 @@
+.list-resources {
+  width: calc(100%);
+  height: calc(100vh - 180px);
+  overflow: auto;
+  &__header {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    &-switch {
+      display: flex !important;
+      align-items: center !important;
+
+      > button {
+        margin-right: 20px !important;
+      }
+    }
+  }
+
+  &__card {
+    height: calc(100vh - 30vh);
+    min-width: calc(100% - 60%);
+    min-height: calc(100vh - 10vh);
+    //overflow: auto;
+    background-color: red($color: #b65959);
+  }
+}
+
+.text_card {
+  font-weight: bold;
+}
